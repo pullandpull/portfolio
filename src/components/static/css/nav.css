@@ -1,0 +1,42 @@
+.nav{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    background-color: rgba(0, 37, 75, 0.829);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:  center;
+    align-items: center;
+    position:relative;
+}
+
+
+.nav-brand{
+    position:relative;
+    right: 8rem;
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+}
+.nav-brand h3{
+    font-size: 2.6rem;
+    font-family: 'PT Sans', sans-serif;
+    color: whitesmoke;   
+    margin: .7rem;
+}
+.nav-brand h3:hover{
+    cursor: pointer;
+}
+
+.nav-project{
+    position: relative;
+    left: 8rem;
+}
+.nav-project h3{
+    font-size: 1.4rem;
+    font-family: 'PT Sans', sans-serif;
+    color: #c2d1c6;   
+    margin: .7rem;
+    text-decoration: none;
+}
+.nav-project h3:hover{
+    cursor: pointer;
+}

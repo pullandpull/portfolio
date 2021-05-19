@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import Nav from './components/static/jsx/Nav';
+import Index from './components/static/jsx/Index'; 
+import Project from './components/static/jsx/Project';
 
+import Container from '@material-ui/core/Container' 
+import {makeStyles} from '@material-ui/core/styles';
+
+import {BrowserRouter as Router, Route , Switch} from 'react-router-dom'; 
+
+const myStyle = makeStyles({
+  root: {
+  },
+})
 function App() {
+  const style = myStyle();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <Router>
+      <Nav />
+      <Container className = {style.root}>
+      <Switch>
+      <Route exact path = '/' render = {() => <Index />} />
+      <Route exact path = '/projects' render = {() => <Project />} />
+      </Switch>
+      </Container>
+      </Router>
     </div>
   );
 }

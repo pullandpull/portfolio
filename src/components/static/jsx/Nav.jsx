@@ -8,7 +8,7 @@ const Nav = () => {
         <div>
             <div className = 'nav'>
                 <div className = 'nav-brand' >
-                     <h3 onClick = {() => {history.push('/')}} >Omar Teraytay</h3>
+                     <h3 onClick = {() => {history.push('/portfolio')}} >Omar Teraytay</h3>
                  </div>
 
                 <div className = 'nav-project' >

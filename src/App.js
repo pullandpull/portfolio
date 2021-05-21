@@ -21,6 +21,7 @@ function App() {
       <Container className = {style.root}>
       <Switch>
       <Route exact path = '/' render = {() => <Index />} />
+      <Route exact path = '/portfolio' render = {() => <Index />} />
       <Route exact path = '/projects' render = {() => <Project />} />
       </Switch>
       </Container>
